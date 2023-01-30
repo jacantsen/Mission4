@@ -1,0 +1,38 @@
+﻿body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:radial-gradient(lightblue,skyblue,grey);
+}
+label{
+    width:150px;
+    display: inline-block;
+    padding:10px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+}
+
+p {
+ 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    position: absolute;
+}
+
+div {
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    align-self:center;
+    text-align:center;
+}
+
+li{
+    list-style:none;
+}

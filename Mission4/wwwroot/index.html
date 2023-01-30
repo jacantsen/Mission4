@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--icon for website-->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAoKC4AAgASAHiMdQB/lHsADhLEAIGVfgAmLwUAhZV+AD0NbQBACnYAcWRHAODKkwBxYkoAc4dwADAgKQCKnocAGSUDAAcDAQB5iXYAND4FAAcEBAB9jHYAISUDAAQAHAAKBwQAfJB5AHqTeQBrdWgADAkKAH6RfAATDrkANQeAAIWPfwA3B4AAhpd8AIWZggAQEOMAMDcDAAEAAgB3iW4AgJR9AA0SxgDc3cQAgpWAADg+MwABAgAAAwMDAAYBBgAIBQAACQQGAHeQewB7j3gAKQOIAIGXfgA1PjQAOQh8AENOAQATFwAAhJiBAIaYgQAAAgEAAQAEAHaKcwAYAjYAAwMEAAUDBAAeBT8Agot/AG54awB/k3wAgJZ8AGRiTgAQEcUAEhPCADsLdACFlH8AOwp6ADsGgAAoHpsAiJyFAAABCAB6hnEAAgUCAAYCAgB4jXQAeo53AHiRdwAIABcAbHdpABwlGQAkKwcAhJV6AIOXgAAoMQcAPEMzAAABAAAAAgMAAQAGAHgdUAACBAAAAwAGAAQCAwACBwAABQQAAHmIeAAAARsABQoJAH+PewB+knsAfpR4AICVewA1BoIAEBkAADwIfwA8EnkAFxwAAAIBAQDy++sARgh/AAEBCgB4jXYAeY12ABoZGwB8lXMAV2BdADcKdAAOEAoAgZZ/AIKWfwA4B30AExLCAGhlSAApMwYAKTEJAF9vXQAAAQIAAAQCAH2RegB7lHoACw0CAIGVdAAPD8wAg5mAADo5PACGmoMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlUCAjVRQxtEIBWOXIBcAgJVAgIsQQFAj356NgMoKAICeQICVFc3XxKBcjIjXDoCAnkCaDxCNxcRFEpLI5ACAgICAi0hDmJiTAkfXgUjAgICAgJnTQ40SEhIHmQdAgICAgICYXF2SI1Jgik9gAICAgKAAlBvfSROLnR3LzsCAgICVQIwBAgkZoMMCotGAgICAgICe3w/JEcLKnVTfwICAgICAlVUGGlgiF8xZScCAgICAhlqFoQAcwBdOSVjKwICAgIzhlImhQAGExxZbkUCAgJ4DRlthxBwWjiMiQcZAgICPj4CbFYaimtYW1VbVQICAgIPAhkziWwzBVwoIk9bAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <!--CSS-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--Title-->
+    <title>Mission 4 Website</title>
+
+</head>
+<body>
+    <!--Preferred Name-->
+    <h1>Jacob Christiansen (a.k.a Supreme Leader)</h1>
+    <!--Image of me doing something I enjoy-->
+
+    <img src="img/D0C6F2AF-1D21-46C8-B8F1-50E3037F6CB0.jpeg" />
+    <!--Paragraph on what I hope to get out of this class-->
+    <p>
+        One thing that I want to get out of this class is unsurprising, and that is
+        to learn c#, how to make websites using the asp.net framework, and
+        maybe some other things along the way that will make me attractive to company recruiters
+    </p>
+    <!--List of top 3 things I want to pursue after graduating-->
+    <div>
+        <span>3 Things I want to pursue after graduation</span>
+        <ul>
+            <li>A good paying job</li>
+            <li>Affordable housing</li>
+            <li>A wife if I don't already have one</li>
+        </ul>
+    </div>
+
+    <!--Grade Calculator Form-->
+    <form>
+        IS 413 Grade Calculator Form
+        <span>(Enter your grade from 0-100, decimals allowed)</span>
+        <br />
+        <!--50% of grade-->
+        <label for="assignment">Assignments</label>
+        <input id="assignment" type="number" min="0" max="100" step=".01" />
+        <br />
+        <!--10% of grade-->
+        <label for="group">Group Project</label>
+        <input id="group" type="number" min="0" max="100" step=".01" />
+        <br />
+        <!--10% of grade-->
+        <label for="quiz">Quizzes</label>
+        <input id="quiz" type="number" min="0" max="100" step=".01" />
+        <br />
+        <!--10% of grade-->
+        <label for="midterm">Midterm Exam</label>
+        <input id="midterm" type="number" min="0" max="100" step=".01" />
+        <br />
+        <!--10% of grade-->
+        <label for="final">Final Exam</label>
+        <input id="final" type="number" min="0" max="100" step=".01" />
+        <br />
+        <!--10% of grade-->
+        <label for="intex">INTEX</label>
+        <input id="intex" type="number" min="0" max="100" step=".01" />
+        <br />
+        <!--Button to calculate grade-->
+        <input id="btn" type="button" value="Calculate" />
+        <br />
+        <!--Output for grade calculation-->
+        <label for="grade">Your Grade would be: </label>
+        <output id="grade"></output>
+    </form>
+    <!--javascript-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/grade_calculator.js"></script>
+</body>
+</html>
