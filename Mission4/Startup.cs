@@ -35,7 +35,7 @@ namespace Mission4
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Pages}/{action=Index}/{id?}"
+                    pattern: "{controller=Hello}/{action=Index}/{id?}"
                     );
             });
         }

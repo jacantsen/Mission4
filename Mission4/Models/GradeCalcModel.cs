@@ -10,33 +10,27 @@ namespace Mission4.Models
     public class GradeCalcModel
     {
         [Required]
-        [MaxLength(100)]
-        [MinLength(0)]
+        [Range(0, 100, ErrorMessage = "Please enter valid number between 0 and 100")]
         public decimal Assignments { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        [MinLength(0)]
+        [Range(0, 100, ErrorMessage = "Please enter valid number between 0 and 100")]
         public decimal groupProject { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        [MinLength(0)]
+        [Range(0, 100, ErrorMessage = "Please enter valid number between 0 and 100")]
         public decimal Quizzes { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        [MinLength(0)]
+        [Range(0, 100, ErrorMessage = "Please enter valid number between 0 and 100")]
         public decimal Midterm { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        [MinLength(0)]
+        [Range(0, 100, ErrorMessage = "Please enter valid number between 0 and 100")]
         public decimal Final { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        [MinLength(0)]
+        [Range(0, 100, ErrorMessage = "Please enter valid number between 0 and 100")]
         public decimal Intex { get; set; }
     }
 }

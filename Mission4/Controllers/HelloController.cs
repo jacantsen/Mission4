@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Mission4.Controllers
 {
-    public class PagesController : Controller
+    public class HelloController : Controller
     {
         public IActionResult Index()
         {

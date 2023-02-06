@@ -54,7 +54,9 @@ $("#btn").click(() => {
         letter = "E"
     }
     //set output text to percent grade and letter grade
-    $("#grade").text(total + "% : " + letter)
+    $("#grade").text(total + "% : " + letter);
+    alert(total + "% : " + letter);
+    
     
 })
 //Uncomment this for fun after grading because this makes it impossible to use the website ;)
