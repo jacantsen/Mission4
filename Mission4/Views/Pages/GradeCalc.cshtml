@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+
+}
+@model GradeCalcModel;
+<!--Grade Calculator Form-->
+<form method="post">
+    IS 413 Grade Calculator Form
+    <span>(Enter your grade from 0-100, decimals allowed)</span>
+    <br />
+    <!--50% of grade-->
+    <label for="assignment">Assignments</label>
+    <input id="assignment" type="number" step=".01" asp-for="Assignments" />
+    <br />
+    <!--10% of grade-->
+    <label for="group">Group Project</label>
+    <input id="group" type="number" step=".01" asp-for="groupProject" />
+    <br />
+    <!--10% of grade-->
+    <label for="quiz">Quizzes</label>
+    <input id="quiz" type="number" step=".01" asp-for="Quizzes" />
+    <br />
+    <!--10% of grade-->
+    <label for="midterm">Midterm Exam</label>
+    <input id="midterm" type="number" step=".01" asp-for="Midterm" />
+    <br />
+    <!--10% of grade-->
+    <label for="final">Final Exam</label>
+    <input id="final" type="number" step=".01" asp-for="Final" />
+    <br />
+    <!--10% of grade-->
+    <label for="intex">INTEX</label>
+    <input id="intex" type="number" step=".01" asp-for="Intex" />
+    <br />
+    <!--Button to calculate grade-->
+    <input id="btn" type="submit" value="Calculate" />
+    <br />
+    <!--Output for grade calculation-->
+    <label for="grade">Your Grade would be: </label>
+    <output id="grade"></output>
+    <div asp-validation-summary="All"></div>
+</form>
